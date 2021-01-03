@@ -1,0 +1,46 @@
+{
+  "name": "cypress-mutation-example",
+  "version": "1.0.0",
+  "description": "Mutation testing example using Cypress",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "react": "16",
+    "react-dom": "16",
+    "react-scripts": "3.2"
+  },
+  "scripts": {
+    "start": "react-scripts -r @cypress/instrument-cra start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "start-test 3000 cy:open",
+    "cy:open": "cypress open"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/react-todo-with-hooks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahmutov/react-todo-with-hooks/issues"
+  },
+  "homepage": "https://github.com/bahmutov/react-todo-with-hooks#readme",
+  "devDependencies": {
+    "@cypress/instrument-cra": "1.4.0",
+    "cypress": "6.2.0",
+    "prettier": "2.2.1",
+    "start-server-and-test": "1.11.7"
+  }
+}
