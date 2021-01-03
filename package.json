@@ -38,7 +38,9 @@
   },
   "homepage": "https://github.com/bahmutov/react-todo-with-hooks#readme",
   "devDependencies": {
+    "@cypress/code-coverage": "3.8.8",
     "@cypress/instrument-cra": "1.4.0",
+    "@stryker-mutator/core": "4.3.1",
     "cypress": "6.2.0",
     "prettier": "2.2.1",
     "start-server-and-test": "1.11.7"
