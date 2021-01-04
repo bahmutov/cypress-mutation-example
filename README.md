@@ -3,6 +3,20 @@
 
 Mutation testing using [Stryker](https://stryker-mutator.io/)
 
+## Install
+
+After cloning this repo
+
+```shell
+npm install
+```
+
+## Run mutation tests
+
+```shell
+npm run test:mutations
+```
+
 Currently blocked by [#2572](https://github.com/stryker-mutator/stryker/issues/2572): JSX parsing
 
 ```

@@ -10,8 +10,7 @@ module.exports = {
   },
   reporters: ['progress', 'clear-text', 'html'],
   coverageAnalysis: 'off',
-  // jest: {
-  //   projectType: 'create-react-app',
-  // },
-  plugins: ['@babel/plugin-syntax-jsx'],
+  mutator: {
+    plugins: ['@babel/plugin-syntax-jsx'],
+  },
 }
