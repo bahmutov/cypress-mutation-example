@@ -19,6 +19,18 @@ workflows:
           wait-on: 'http://localhost:3000'
           no-workspace: true
           post-steps:
+            # TODO enable code coverage report after fixing
+            # https://github.com/bahmutov/cypress-mutation-example/issues/1
             # store code coverage HTML report
+            # - store_artifacts:
+            #     path: coverage/lcov-report
+      - cypress/run:
+          name: Mutation tests
+          requires:
+            - cypress/install
+          install-command: echo 'Already installed in previous job'
+          command: npm run test:mutations
+          no-workspace: true
+          post-steps:
             - store_artifacts:
-                path: coverage/lcov-report
+                path: reports/mutation/html
