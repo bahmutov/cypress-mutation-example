@@ -12,6 +12,7 @@ workflows:
       - cypress/run:
           start: npm start
           wait-on: 'http://localhost:3000'
+          no-workspace: true
           post-steps:
             # store code coverage HTML report
             - store_artifacts:
