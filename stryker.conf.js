@@ -10,7 +10,7 @@ module.exports = {
   },
   reporters: ['progress', 'clear-text', 'html'],
   coverageAnalysis: 'off',
-  mutator: {
-    plugins: ['@babel/plugin-syntax-jsx'],
-  },
+  // mutator: {
+  //   plugins: ['@babel/plugin-syntax-jsx'],
+  // },
 }
