@@ -17,7 +17,8 @@
     "dev": "start-test 3000 cy:open",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test:mutations": "stryker run"
+    "test:mutations": "stryker run",
+    "ci": "start-test 3000 cy:run"
   },
   "eslintConfig": {
     "extends": "react-app"
