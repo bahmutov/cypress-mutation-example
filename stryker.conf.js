@@ -3,10 +3,11 @@
  */
 module.exports = {
   mutate: ['src/**/*.js'],
+  concurrency: 1,
   // testRunner: 'jest',
   // mutator: 'javascript',
   commandRunner: {
-    command: 'npm run cy:run',
+    command: 'npm run ci',
   },
   reporters: ['progress', 'clear-text', 'html'],
   coverageAnalysis: 'off',

@@ -7,10 +7,11 @@
   "dependencies": {
     "react": "16",
     "react-dom": "16",
-    "react-scripts": "3.2"
+    "react-scripts": "4.0.1"
   },
   "scripts": {
-    "start": "react-scripts -r @cypress/instrument-cra start",
+    "start": "react-scripts start",
+    "start:coverage": "react-scripts -r @cypress/instrument-cra start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -21,25 +22,22 @@
     "ci": "start-test 3000 cy:run"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "import/first": "warn"
+    }
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bahmutov/react-todo-with-hooks.git"
+    "url": "git+https://github.com/bahmutov/cypress-mutation-example.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bahmutov/react-todo-with-hooks/issues"
+    "url": "https://github.com/bahmutov/cypress-mutation-example/issues"
   },
-  "homepage": "https://github.com/bahmutov/react-todo-with-hooks#readme",
+  "homepage": "https://github.com/bahmutov/cypress-mutation-example#readme",
   "devDependencies": {
     "@cypress/code-coverage": "3.8.8",
     "@cypress/instrument-cra": "1.4.0",
@@ -47,5 +45,17 @@
     "cypress": "6.2.0",
     "prettier": "2.2.1",
     "start-server-and-test": "1.11.7"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
