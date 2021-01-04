@@ -8,8 +8,13 @@ workflows:
   build:
     jobs:
       # "cypress" is the name of the imported orb
-      # "run" is the name of the job defined in Cypress orb
+      # "install", "run" are jobs predefined in the Cypress orb
+      - cypress/install
       - cypress/run:
+          name: E2E tests
+          requires:
+            - cypress/install
+          install-command: echo 'Already installed in previous job'
           start: npm start
           wait-on: 'http://localhost:3000'
           no-workspace: true
