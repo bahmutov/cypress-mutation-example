@@ -1,4 +1,5 @@
-# cypress-mutation-example
+# cypress-mutation-example [![CircleCI](https://circleci.com/gh/bahmutov/cypress-mutation-example/tree/main.svg?style=svg)](https://circleci.com/gh/bahmutov/cypress-mutation-example/tree/main)
+
 > Mutation testing example using Cypress
 
 Mutation testing using [Stryker](https://stryker-mutator.io/)
